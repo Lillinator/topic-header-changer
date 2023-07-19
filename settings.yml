@@ -4,6 +4,12 @@ topic_header_text:
   description:
     en: "Topic header text."
 
+apply_to_all:
+  type: bool
+  default: false
+  description:
+    en: "Apply above topic header text to all categories."
+
 categories:
   type: list
   default: ""
