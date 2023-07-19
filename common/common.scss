@@ -1,0 +1,15 @@
+@each $category in $categories {
+  body.category-$category {
+  .topic-list-header {
+    .default.topic-list-data {
+      span {
+        visibility: hidden;
+        &:before {
+          content: "#{$topic_header_text";
+          visibility: visible;
+          }
+        }
+      }
+    }
+  }
+}
