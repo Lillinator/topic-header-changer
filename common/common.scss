@@ -1,3 +1,5 @@
+$categories: "#{$category}";
+
 @each $category in $categories {
   body.category-#{$category} {
   .topic-list-header {
