@@ -1,4 +1,4 @@
-$categories: $category;
+$categories: "#{$category}";
 
 @each $category in $categories {
   body.category-#{$category} {
