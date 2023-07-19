@@ -15,7 +15,7 @@
 }
 
 @else {
-  @each $category in $categories {
+  @each $category in zip($categories) {
     body.category-#{$category} {
       .topic-list-header {
         .default.topic-list-data {
