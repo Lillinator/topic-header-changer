@@ -1,11 +1,11 @@
 @each $category in $categories {
-  body.category-$category {
+  body.category-#{$category} {
   .topic-list-header {
     .default.topic-list-data {
       span {
         visibility: hidden;
         &:before {
-          content: "#{$topic_header_text";
+          content: "#{$topic_header_text}";
           visibility: visible;
           }
         }
