@@ -1,29 +1,34 @@
-@if $apply_to_all == "true" {
-    .topic-list-header {
-    .default.topic-list-data {
-      span {
-        visibility: hidden;
-        &:before {
-          content: "#{$topic_header_text}";
-          visibility: visible;i
-        }
-       }
-      }
-  }
-} @else {
-  @each $category in $categories {
-  body.category-#{$category} {
+@if $apply_to_all =="true" {
   .topic-list-header {
     .default.topic-list-data {
       span {
         visibility: hidden;
+
         &:before {
           content: "#{$topic_header_text}";
           visibility: visible;
+
+        }
+      }
+    }
+  }
+}
+
+@else {
+  @each $category in $categories {
+    body.category-#{$category} {
+      .topic-list-header {
+        .default.topic-list-data {
+          span {
+            visibility: hidden;
+
+            &:before {
+              content: "#{$topic_header_text}";
+              visibility: visible;
+            }
           }
         }
       }
     }
   }
- }
 }
