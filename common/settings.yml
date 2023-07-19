@@ -1,0 +1,11 @@
+topic_header_text:
+  type: string
+  default: "Topic"
+  description:
+    en: "Topic header text."
+
+categories:
+  type: list
+  default: ""
+  description: 
+    en: "Apply above topic header text to these categories. List category slugs in all lowercase."
