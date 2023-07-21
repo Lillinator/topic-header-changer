@@ -1,3 +1,8 @@
+@import "str-to-list";
+
+$list: str-to-list("#{$categories}", "|");
+
+
 @if $apply_to_all =="true" {
   .topic-list-header {
     .default.topic-list-data {
@@ -15,7 +20,7 @@
 }
 
 @else {
-  @each $category in zip($categories) {
+  @each $category in $list {
     body.category-#{$category} {
       .topic-list-header {
         .default.topic-list-data {
