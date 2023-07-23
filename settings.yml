@@ -12,7 +12,7 @@ apply_to_all:
 
 categories:
   type: list
-  list_type: group
+  list_type: category
   default: ""
   description: 
     en: "Apply above topic header text to these categories. List category slugs in all lowercase."
